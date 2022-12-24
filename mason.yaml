@@ -10,3 +10,5 @@ bricks:
   #     path: bricks/widget
   flutter_ddd:
     path: bricks/flutter_ddd
+  flutter_module:
+    path: bricks/flutter_module
