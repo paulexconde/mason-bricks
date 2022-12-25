@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-class {{name.pascalCase()}} extends StatelessWidget {
+class {{name.pascalCase()}}Screen extends StatelessWidget {
   const {{name.pascalCase()}}({super.key});
 
   @override
