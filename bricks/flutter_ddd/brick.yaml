@@ -4,7 +4,7 @@ description: Flutter template with pre-installed packages and folder structure b
 # The following defines the version and build number for your brick.
 # A version number is three numbers separated by dots, like 1.2.34
 # followed by an optional build number (separated by a +).
-version: 0.1.0+3
+version: 0.1.0+4
 
 # The following defines the environment for the current brick.
 # It includes the version of mason that the brick requires.
@@ -21,3 +21,14 @@ environment:
 #  * an optional prompt phrase used when asking for the variable
 #  * a list of values (enums only)
 vars:
+  project_name:
+    type: string
+    description: Project name
+    default: Flutter Project
+    prompt: Project name?
+
+  description:
+    type: string
+    description: The description of your project
+    default: A new Flutter project.
+    prompt: Description?
