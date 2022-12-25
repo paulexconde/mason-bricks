@@ -38,6 +38,7 @@ dependencies:
   riverpod_annotation: ^1.0.4
   freezed_annotation: ^2.2.0
   json_annotation: ^4.7.0
+  equatable: ^2.0.5
   shared_preferences: ^2.0.15
   dartz: ^0.10.1
 
