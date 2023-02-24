@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-// TODO: Define your theming by overriding the default color scheme
+import 'package:flutter_extra/constants/constants.dart';
 
 ThemeData get lightTheme {
   final ThemeData lightTheme = ThemeData.light();

@@ -22,6 +22,13 @@ class ErrorObject extends Equatable {
           title: 'Error Code: JSON_PARSING_FAILURE',
           message: 'It seems that the app needs to be updated to reflect the , '
               'changed server data structure.'),
+      notFoundFailure: () => const ErrorObject(
+          title: 'Error Code: NOT FOUND', message: 'Data not found.'),
+      unAuthorizedFailure: () => const ErrorObject(
+        title: 'Error Code: UNAUTHORIZED',
+        message:
+            'It seems that your are not authorized to access this resource.',
+      ),
       noConnectionFailure: () => const ErrorObject(
         title: 'Error Code: NO_CONNECTIVITY',
         message: 'It seems that your device is not connected to the network, '

@@ -10,8 +10,10 @@ class MyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final isDarkTheme = ref.watch(isDarkThemeProvider);
+    final router = ref.watch(routerProvider);
     return MaterialApp.router(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Extra',
       theme: lightTheme,
       darkTheme: darkTheme,
       themeMode: isDarkTheme ? ThemeMode.dark : ThemeMode.light,

@@ -1,12 +1,13 @@
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-class IsDarkThemeNotifier extends StateNotifier<bool> {
-  IsDarkThemeNotifier() : super(false);
+part 'theme_provider.g.dart';
+
+@riverpod
+class IsDarkTheme extends _$IsDarkTheme {
+  @override
+  bool build() => false;
 
   void toggleTheme() {
     state = !state;
   }
 }
-
-final isDarkThemeProvider = StateNotifierProvider<IsDarkThemeNotifier, bool>(
-    ((ref) => IsDarkThemeNotifier()));
