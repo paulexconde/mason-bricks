@@ -1,10 +1,11 @@
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-import 'package:flutter_extra/shared/providers/local_storage.dart';
-import 'package:flutter_extra/features/auth/ui/providers/auth_provider.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+
+import '/shared/providers/local_storage.dart';
+import '/features/auth/ui/providers/auth_provider.dart';
 
 // This http client comes with provider
 class AuthenticationCustomInterceptor extends Interceptor {

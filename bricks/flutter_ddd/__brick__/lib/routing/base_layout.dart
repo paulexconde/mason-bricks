@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_extra/features/auth/ui/providers/auth_provider.dart';
-import 'package:flutter_extra/routing/states.dart';
-import 'package:flutter_extra/routing/tabs.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+
+import '/features/auth/ui/providers/auth_provider.dart';
+import '/routing/states.dart';
+import '/routing/tabs.dart';
 
 class BaseScaffold extends ConsumerStatefulWidget {
   const BaseScaffold({super.key, required this.child});

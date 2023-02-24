@@ -1,10 +1,11 @@
-import 'package:flutter_extra/features/auth/ui/screens/auth_screen.dart';
-import 'package:flutter_extra/features/auth/ui/screens/splash_screen.dart';
-import 'package:flutter_extra/routing/base_layout.dart';
-import 'package:flutter_extra/routing/router_notifier.dart';
-import 'package:flutter_extra/routing/states.dart';
 import 'package:go_router/go_router.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
+
+import '/features/auth/ui/screens/auth_screen.dart';
+import '/features/auth/ui/screens/splash_screen.dart';
+import '/routing/base_layout.dart';
+import '/routing/router_notifier.dart';
+import '/routing/states.dart';
 
 part 'router.g.dart';
 

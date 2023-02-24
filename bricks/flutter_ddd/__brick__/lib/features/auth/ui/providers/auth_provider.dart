@@ -1,6 +1,6 @@
-import 'package:flutter_extra/shared/providers/local_storage.dart';
-import 'package:flutter_extra/features/auth/repositories/auth_repository.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
+import '/shared/providers/local_storage.dart';
+import '/features/auth/repositories/auth_repository.dart';
 
 part 'auth_provider.g.dart';
 

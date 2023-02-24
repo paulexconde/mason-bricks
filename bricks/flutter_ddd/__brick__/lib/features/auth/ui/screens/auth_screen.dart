@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_extra/features/auth/ui/providers/auth_provider.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+
+import '/features/auth/ui/providers/auth_provider.dart';
 
 class AuthScreen extends ConsumerWidget {
   const AuthScreen({super.key});

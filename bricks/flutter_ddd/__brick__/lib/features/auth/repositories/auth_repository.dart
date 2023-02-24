@@ -1,10 +1,11 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_extra/shared/providers/http_client_provider.dart';
-import 'package:flutter_extra/shared/providers/local_storage.dart';
-import 'package:flutter_extra/features/auth/dto/sign_in_dto.dart';
-import 'package:flutter_extra/features/auth/models/auth.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
+
+import '/shared/providers/http_client_provider.dart';
+import '/shared/providers/local_storage.dart';
+import '/features/auth/dto/sign_in_dto.dart';
+import '/features/auth/models/auth.dart';
 
 class AuthRepository {
   AuthRepository({required this.ref, required this.httpClientProvider});
