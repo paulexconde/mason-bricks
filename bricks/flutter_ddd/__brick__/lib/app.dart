@@ -13,7 +13,7 @@ class MyApp extends ConsumerWidget {
     final router = ref.watch(routerProvider);
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      title: '{{#snakeCase}}{{ project_name }}{{/snakeCase}}',
+      title: '{{#titleCase}}{{ project_name }}{{/titleCase}}',
       theme: lightTheme,
       darkTheme: darkTheme,
       themeMode: isDarkTheme ? ThemeMode.dark : ThemeMode.light,
