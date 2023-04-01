@@ -26,6 +26,15 @@ class AuthenticationCustomInterceptor extends Interceptor {
 
   @override
   Future onError(DioError err, ErrorInterceptorHandler handler) async {
+    final isAccessToken = await _localStorage.containsKey(key: 'access_token');
+    final isRefreshToken =
+        await _localStorage.containsKey(key: 'refresh_token');
+
+    if (!isAccessToken && !isRefreshToken) {
+      _ref.read(authProvider.notifier).forceLogOut();
+      return err;
+    }
+
     if (err.response?.statusCode == 401 &&
         err.response?.data["detail"] == 'Token is invalid or expired') {
       _ref.read(authProvider.notifier).forceLogOut();
